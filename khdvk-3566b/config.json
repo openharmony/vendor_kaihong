@@ -1,0 +1,75 @@
+{
+  "product_name": "khdvk-3566b",
+  "device_company": "kaihong",
+  "device_build_path": "device/board/kaihong/build",
+  "target_cpu": "arm",
+  "type": "standard",
+  "version": "3.0",
+  "board": "khdvk-3566b",
+  "api_version": 8,
+  "enable_ramdisk": true,
+  "build_selinux": true,
+  "build_seccomp": true,
+  "inherit": [ "productdefine/common/inherit/rich.json", "productdefine/common/inherit/chipset_common.json" ],
+  "subsystems": [
+    {
+      "subsystem": "security",
+      "components": [
+        {
+          "component": "selinux",
+          "features": []
+        }
+      ]
+    },
+    {
+      "subsystem": "communication",
+      "components": [
+        {
+          "component": "netmanager_ext",
+          "features": []
+        }
+      ]
+    },
+    {
+      "subsystem": "kaihong_products",
+      "components": [
+        {
+          "component": "kaihong_products",
+          "features": []
+        }
+      ]
+    },
+    {
+      "subsystem": "arkui",
+      "components": [
+        {
+          "component": "ace_engine",
+          "features": [
+            "ace_engine_feature_enable_accessibility = true",
+            "ace_engine_feature_enable_web = true"
+          ]
+        }
+      ]
+    },
+    {
+      "subsystem": "wpa_supplicant-2.9",
+      "components": [
+        {
+          "component": "wpa_supplicant-2.9",
+          "features": [
+            "wpa_supplicant_driver_nl80211 = true"
+          ]
+        }
+      ]
+    },
+    {
+      "subsystem": "hdf",
+      "components": [
+        {
+          "component": "drivers_interface_audio",
+          "features": []
+        }
+      ]
+    }
+  ]
+}
