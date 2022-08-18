@@ -1,0 +1,55 @@
+/*
+ * Copyright (C) 2022 HiHope Open Source Organization .
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http:// www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ *
+ * limitations under the License.
+ */
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "material": {
+          "certpath": "C:\\Users\\lza\\.ohos\\config\\openharmony\\auto_ohos.cer",
+          "storePassword": "0000001890BD212F95369E11FC7E4F36A7B8277254CB2FA1BF7EA3D0CC4F53F6D39D94B53687A644",
+          "keyAlias": "debugKey",
+          "keyPassword": "00000018B4AFC9931B74EEC1D5C019E2EA459ADB4D0338A2617576EB520BAC596BB4C70CD683E533",
+          "profile": "C:\\Users\\lza\\.ohos\\config\\openharmony\\auto_ohos_default_com.example.udpdemo.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\lza\\.ohos\\config\\openharmony\\auto_ohos.p12"
+        }
+      }
+    ],
+    "compileSdkVersion": 8,
+    "compatibleSdkVersion": 8,
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
