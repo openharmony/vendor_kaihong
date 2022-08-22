@@ -1,7 +1,7 @@
 {
   "product_name": "khdvk_3566b",
   "device_company": "kaihong",
-  "device_build_path": "device/board/kaihong/build",
+  "device_build_path": "device/board/kaihong/khdvk_3566b",
   "target_cpu": "arm64",
   "type": "standard",
   "version": "3.0",
