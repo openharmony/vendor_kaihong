@@ -102,8 +102,8 @@ root {
         }
         chipList {
             template chipInst {
-                match_attr = "hdf_wlan_chips_ap6275s";
-                driverName = "ap6275s";
+                match_attr = "hdf_wlan_chips_ap6256";
+                driverName = "ap6256";
                 bus {
                     vendorId = 0x0296;
                     deviceId = [0x5347];
