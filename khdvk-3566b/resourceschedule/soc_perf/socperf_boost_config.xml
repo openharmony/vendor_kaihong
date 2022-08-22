@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding="utf-8"?>
+<!--
+ * Copyright (c) 2022 Shenzhen Kaihong Digital Industry Development Co., Ltd.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ -->
+<Configs>
+    <cmd id="10000" name="app_start">
+        <Action>
+            <duration>1500</duration>
+            <lit_cpu_min_freq>1992000</lit_cpu_min_freq>
+        </Action>
+    </cmd>
+    <cmd id="10001" name="warm_start">
+        <Action>
+            <duration>400</duration>
+            <lit_cpu_min_freq>1800000</lit_cpu_min_freq>
+        </Action>
+    </cmd>
+    <cmd id="10002" name="window_switch">
+        <Action>
+            <duration>400</duration>
+            <lit_cpu_min_freq>1608000</lit_cpu_min_freq>
+        </Action>
+    </cmd>
+    <cmd id="10006" name="click_normal">
+        <Action>
+            <duration>250</duration>
+            <lit_cpu_min_freq>1608000</lit_cpu_min_freq>
+        </Action>
+    </cmd>
+    <cmd id="10007" name="push_page">
+        <Action>
+            <duration>300</duration>
+            <lit_cpu_min_freq>1608000</lit_cpu_min_freq>
+        </Action>
+    </cmd>
+    <cmd id="10008" name="list_fling">
+        <Action>
+            <duration>5000</duration>
+            <lit_cpu_min_freq>1992000</lit_cpu_min_freq>
+        </Action>
+    </cmd>
+    <cmd id="10009" name="slide_normal">
+        <Action>
+            <duration>5000</duration>
+            <lit_cpu_min_freq>1992000</lit_cpu_min_freq>
+        </Action>
+    </cmd>
+</Configs>
