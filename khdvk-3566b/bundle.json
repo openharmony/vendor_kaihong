@@ -1,0 +1,25 @@
+{
+  "name": "@ohos/kaihong_khdvk_3566b",
+  "version": "3.1",
+  "license": "Apache License 2.0",
+  "private": false,
+  "scripts": {},
+  "dirs": [""],
+  "component": {
+    "name": "kaihong_products",
+    "subsystem": "kaihong_products",
+    "syscap": [],
+    "features": [],
+    "deps": {
+      "components": [],
+      "third_party": []
+    },
+    "build": {
+      "sub_component": [
+        "//vendor/kaihong/khdvk_3566b/image_conf:custom_image_conf",
+        "//vendor/kaihong/khdvk_3566b/preinstall-config:preinstall-config",
+        "//vendor/kaihong/khdvk_3566b/resourceschedule:resourceschedule"
+      ]
+    }
+  }
+}
