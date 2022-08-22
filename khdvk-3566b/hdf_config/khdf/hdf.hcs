@@ -7,7 +7,7 @@
 #include "platform/rk3568_spi_config.hcs"
 #include "input/input_config.hcs"
 #include "wifi/wlan_platform.hcs"
-#include "wifi/wlan_chip_ap6275s.hcs"
+#include "wifi/wlan_chip_ap6256.hcs"
 #include "sensor/sensor_config.hcs"
 #include "audio/audio_config.hcs"
 #include "audio/codec_config.hcs"

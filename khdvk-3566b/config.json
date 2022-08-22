@@ -1,11 +1,11 @@
 {
-  "product_name": "khdvk-3566b",
+  "product_name": "khdvk_3566b",
   "device_company": "kaihong",
   "device_build_path": "device/board/kaihong/build",
-  "target_cpu": "arm",
+  "target_cpu": "arm64",
   "type": "standard",
   "version": "3.0",
-  "board": "khdvk-3566b",
+  "board": "khdvk_3566b",
   "api_version": 8,
   "enable_ramdisk": true,
   "build_selinux": true,
@@ -57,7 +57,7 @@
         {
           "component": "wpa_supplicant-2.9",
           "features": [
-            "wpa_supplicant_driver_nl80211 = true"
+            "wpa_supplicant_driver_nl80211 = false"
           ]
         }
       ]
