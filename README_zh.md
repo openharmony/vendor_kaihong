@@ -29,7 +29,6 @@ vendor/kaihong
 3、在config.json中可删除xts、kv_store、文件管理子系统，保留kernel、startup、hiviewdfx、distributedschedule等必要的子系统，可移除如下代码段：
 
 ```
-
 {
       "subsystem": "utils",
       "components": [
@@ -60,21 +59,21 @@ vendor/kaihong
       ]
 },
 {
-	"subsystem": "xts",
-	"components": [
-	{
-	  "component": "xts_acts",
-	  "features": []
-	},
-	{
-	  "component": "xts_hats",
-	  "features": []
-	},
-	{
-	  "component": "xts_dcts",
-	  "features": []
-	}
-	]
+    "subsystem": "xts",
+    "components": [
+    {
+      "component": "xts_acts",
+      "features": []
+    },
+    {
+      "component": "xts_hats",
+      "features": []
+    },
+    {
+      "component": "xts_dcts",
+      "features": []
+    }
+    ]
 }
 ```
 
@@ -85,8 +84,13 @@ group("xxx_3566") {
 }
 ```
 
-5、在OpenHarmony源码根目录下，执行./build.sh --product-name xxx_3566, out目录出现自己的产品名称 "xxx_3566"：
+5、在OpenHarmony源码根目录下，执行：
 
+```
+./build.sh --product-name xxx_3566
+```
+
+out目录出现自己的产品名称 "xxx_3566"。
 
 至此，一个简单的产品工程搭建完成，用户可按此方法，搭建自己产品工程。
 
