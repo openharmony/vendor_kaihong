@@ -96,6 +96,40 @@ out目录出现自己的产品名称 "xxx_3566"。
 
 详细的产品编译构建适配流程，请参考[编译构建适配流程](https://gitee.com/openharmony/docs/blob/master/zh-cn/device-dev/porting/porting-chip-prepare-process.md)
 
+
+
+6、XTS编译方法
+
+6.1、acts测试
+
+进入到源码目录：test/xts/hats/
+
+执行编译命令：
+
+```
+./build.sh suite=acts system_size=standard product_name=khdvk_3566b target_arch=arm64
+```
+
+输出目录：
+
+out/khdvk_3566b/suites/acts/testcases/
+
+6.2、hats测试
+
+进入到源码目录：test/xts/hats/
+
+执行编译命令：
+
+```
+./build.sh suite=hats system_size=standard product_name=khdvk_3566b target_arch=arm64
+```
+
+输出目录：
+
+out/khdvk_3566b/suites/hats/testcases/
+
+
+
 ## 贡献
 
 [如何参与](https://gitee.com/openharmony/docs/blob/HEAD/zh-cn/contribute/%E5%8F%82%E4%B8%8E%E8%B4%A1%E7%8C%AE.md)
