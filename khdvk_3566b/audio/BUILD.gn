@@ -18,7 +18,8 @@ ohos_prebuilt_etc("audio_policy_config") {
     source =
         "//vendor/kaihong/${product_name}/audio/arm64/audio_policy_config.xml"
   } else {
-    source = "//vendor/kaihong/${product_name}/audio/arm/audio_policy_config.xml"
+    source =
+        "//vendor/kaihong/${product_name}/audio/arm/audio_policy_config.xml"
   }
   subsystem_name = "hdf"
   relative_install_dir = "audio"
