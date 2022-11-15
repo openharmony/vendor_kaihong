@@ -84,19 +84,13 @@ group("xxx_3566") {
 }
 ```
 
-5、在OpenHarmony源码根目录下，执行：
+5、在OpenHarmony源码根目录下，执行./build.sh --product-name xxx_3566, out目录出现自己的产品名称 "xxx_3566"：
 
-```
-./build.sh --product-name xxx_3566
-```
 
-out目录出现自己的产品名称 "xxx_3566"。
 
 至此，一个简单的产品工程搭建完成，用户可按此方法，搭建自己产品工程。
 
 详细的产品编译构建适配流程，请参考[编译构建适配流程](https://gitee.com/openharmony/docs/blob/master/zh-cn/device-dev/porting/porting-chip-prepare-process.md)
-
-
 
 6、XTS编译方法
 
@@ -127,8 +121,6 @@ out/khdvk_3566b/suites/acts/testcases/
 输出目录：
 
 out/khdvk_3566b/suites/hats/testcases/
-
-
 
 ## 贡献
 

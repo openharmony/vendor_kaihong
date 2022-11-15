@@ -137,6 +137,7 @@ root {
                 cameraPosition = "OHOS_CAMERA_POSITION_FRONT";
                 cameraType = "OHOS_CAMERA_TYPE_WIDE_ANGLE";
                 cameraConnectionType ="OHOS_CAMERA_CONNECTION_TYPE_BUILTIN";
+                cameraMemoryType ="OHOS_CAMERA_MEMORY_USERPTR";
                 faceDetectMaxNum = "10";
                 aeCompensationRange = [0, 0];
                 aeCompensationSteps = [0, 0];

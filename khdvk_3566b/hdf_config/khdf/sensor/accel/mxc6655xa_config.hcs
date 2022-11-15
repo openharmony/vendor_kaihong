@@ -8,12 +8,14 @@ root {
             sensorTypeId = 1; // enum SensorTypeTag
             sensorId = 1; // user define sensor id
             power = 230;
+            minDelay = 5000000; // nanosecond
+            maxDelay = 200000000; // nanosecond
         }
         sensorBusConfig :: sensorBusInfo {
             busType = 0; // 0:i2c 1:spi
             busNum = 5;
             busAddr = 0x15;
-            regWidth = 1; // 1btye
+            regWidth = 1; // 1byte
         }
         sensorIdAttr :: sensorIdInfo {
             chipName = "mxc6655xa";
@@ -21,7 +23,7 @@ root {
             chipIdValue = 0x05;
         }
         sensorDirection {
-            direction = 5; // chip direction range of value:0-7
+            direction = 1; // chip direction range of value:0-7
             /* <sign> 1:negative  0:positive
                <map> 0:AXIS_X  1:AXIS_Y  2:AXIS_Z
             */
