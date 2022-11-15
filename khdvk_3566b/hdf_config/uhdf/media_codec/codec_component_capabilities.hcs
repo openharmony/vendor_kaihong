@@ -39,7 +39,7 @@ root {
                 maxBlocksPerSecond = 0xFFFFFFFF;
                 blockSizeWidth = 0xFFFFFFFF;
                 blockSizeHeight = 0xFFFFFFFF;
-                supportPixelFmts = [28, 24, 30, 22, 7, 3, 14, 13, 20, 26, 27, 12];
+                supportPixelFmts = [28, 24, 20, 12];
                 measuredFrameRate = [320, 240, 165, 165, 720, 480, 149, 149, 1280, 720, 73, 73, 1920, 1080, 18, 18];
                 bitRateMode = [1, 2];
                 minFrameRate = 0;
@@ -164,7 +164,7 @@ root {
                 maxFrameRate = 0;
             }
             HDF_video_hw_dec_m4v_rk {
-                role = 0xFFFFFFFF;
+                role = 3;
                 type = 0;
                 name = "OMX.rk.video_decoder.m4v";
                 supportProfiles = [1, 1, 1, 2, 1, 4, 1, 8, 1, 16];

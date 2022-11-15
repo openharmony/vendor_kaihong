@@ -25,5 +25,15 @@
             <path>/sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq</path>
             <node>408000 600000 816000 1104000 1416000 1608000 1800000 1992000</node>
         </res>
+        <res id="2000" name="gpu_min_freq" pair="2001">
+            <default>200000000</default>
+            <path>/sys/class/devfreq/fde60000.gpu/min_freq</path>
+            <node>200000000 300000000 400000000 600000000 700000000 800000000</node>
+        </res>
+        <res id="2001" name="gpu_max_freq" pair="2000" mode="1">
+            <default>800000000</default>
+            <path>/sys/class/devfreq/fde60000.gpu/max_freq</path>
+            <node>200000000 300000000 400000000 600000000 700000000 800000000</node>
+        </res>
     </Resource>
 </Configs>

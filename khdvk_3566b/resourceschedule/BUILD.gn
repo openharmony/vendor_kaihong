@@ -18,7 +18,7 @@ ohos_prebuilt_etc("res_sched_config") {
   install_enable = true
   install_images = [ chipset_base_dir ]
   module_install_dir = "etc/ressched"
-  part_name = "product_rk3566"
+  part_name = "product_khdvk_3566b"
 }
 
 ohos_prebuilt_etc("res_sched_plugin_switch") {
@@ -26,7 +26,7 @@ ohos_prebuilt_etc("res_sched_plugin_switch") {
   install_enable = true
   install_images = [ chipset_base_dir ]
   module_install_dir = "etc/ressched"
-  part_name = "product_rk3566"
+  part_name = "product_khdvk_3566b"
 }
 
 ohos_prebuilt_etc("cgroup_action_config") {
@@ -34,7 +34,7 @@ ohos_prebuilt_etc("cgroup_action_config") {
   install_enable = true
   install_images = [ chipset_base_dir ]
   module_install_dir = "etc/cgroup_sched"
-  part_name = "product_rk3566"
+  part_name = "product_khdvk_3566b"
 }
 
 ohos_prebuilt_etc("socperf_boost_config") {
@@ -42,7 +42,7 @@ ohos_prebuilt_etc("socperf_boost_config") {
   install_enable = true
   install_images = [ chipset_base_dir ]
   module_install_dir = "etc/soc_perf"
-  part_name = "product_rk3566"
+  part_name = "product_khdvk_3566b"
 }
 
 ohos_prebuilt_etc("socperf_resource_config") {
@@ -50,7 +50,7 @@ ohos_prebuilt_etc("socperf_resource_config") {
   install_enable = true
   install_images = [ chipset_base_dir ]
   module_install_dir = "etc/soc_perf"
-  part_name = "product_rk3566"
+  part_name = "product_khdvk_3566b"
 }
 
 group("resourceschedule") {

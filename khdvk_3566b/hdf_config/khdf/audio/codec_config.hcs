@@ -33,7 +33,7 @@ root {
                     0x2f,    0x03,
                     0x30,    0x06,
                     0x35,    0x02,
-                    0x38,    0x11,
+                    0x38,    0x10,
                     0x3c,    0x0F,
                     0x3d,    0x80,
                     0x3e,    0x0f,
@@ -54,21 +54,6 @@ root {
                 ];
 
                 controlsConfig = [
-                    /*
-                        "Master Playback Volume",
-                        "Master Capture Volume",
-                        "Playback Mute",
-                        "Capture Mute",
-                        "Mic Left Gain",
-                        "Mic Right Gain",
-                        "Render Channel Mode",
-                        "Captrue Channel Mode"
-                    */
-
-                    /*
-                        iface
-                        0：global control
-                    */
 
                     /*array index, iface, mixer/mux, enable,*/
                     0,  2,  0,  1,
@@ -94,29 +79,25 @@ root {
                 ];
 
                 /* reg, rreg, shift, rshift, min, max, mask, invert, value */
-                daiStartupSeqConfig = [
-                    0x38,    0x38,    0,    0,    0x0,    0xFF,    0xFF,    0,    0x10, 
-                ];
-
-                /* reg, rreg, shift, rshift, min, max, mask, invert, value */
                 daiParamsSeqConfig = [
                     0x45,    0x45,    0,     0,    0x0,   0xFF,    0xFF,   0,     0x0C, // PLL_PREDIV_BIT
                     0x35,    0x35,    0,     0,    0x0,   0x7,     0x7,    0,     0x2,  // DAC_Sample_rate
                     0x1e,    0x1e,    0,     0,    0x0,   0x7,     0x7,    0,     0x2,  // ADC_Sample_rate
-                    0x4e,    0x4e,    0,     0,    0x0,   0x17,    0x1F,   0,     0x0F, // TX_datawidth 
-                    0x4b,    0x4b,    0,     0,    0x0,   0x17,    0x1F,   0,     0x0F  // RX_datawidth 
+                    0x4e,    0x4e,    0,     0,    0x0,   0x17,    0x1F,   0,     0x0F, // TX_datawidth
+                    0x4b,    0x4b,    0,     0,    0x0,   0x17,    0x1F,   0,     0x0F, // RX_datawidth
+                    0x15,    0x15,  0x0,   0x0,    0x0,    0xf,     0xf,   0,     0x0,  // rx clk enable
+                    0x15,    0x15,  0x4,   0x4,    0x0,    0xf,     0xf,   0,     0x0,  // tx clk enable
                 ];
 
                 ctrlSapmParamsSeqConfig = [
                     0x27,    0x27,    5,     5,    0x00,    0x1,    0x1,    1,    0x00,     //LPGA MIC  -- connect MIC1
-                    0x27,    0x27,    4,     4,    0x00,    0x1,    0x1,    1,    0x00,     //RPGA MIC  -- connect MIC
+                    0x27,    0x27,    4,     4,    0x00,    0x1,    0x1,    1,    0x00,     //RPGA MIC  -- connect MIC2
                     0x2F,    0x2F,    2,     2,    0x00,    0x1,    0x1,    1,    0x00,     //Speaker1 Switch -- connect speaker
                     0x2F,    0x2F,    1,     1,    0x00,    0x1,    0x1,    1,    0x00,     //Headphone1 Switch -- connect hpl
                     0x2F,    0x2F,    0,     0,    0x00,    0x1,    0x1,    1,    0x00,     //Headphone2 Switch -- connect hpr
                 ];
                 /*
                  电源管理组件配置
-                 componentName: 功能名称，{"ADCL", "ADCR", "DACL", "DACR", "LPGA", "RPGA", "SPKL", "SPKR", "MIC"} 数组索引。
                  reg is 0xFFFF: component has no sapm register bit
                  sapmType,compNameIndex,reg, mask,shift,invert, kcontrolNews,kcontrolsNum
                 */
@@ -138,7 +119,7 @@ root {
                     13,     41,       0x4d,       0x1,     1,     0,     0,     0   //MIC2
                 ];
 
-                /*g_audioSapmCfgNameList: array index, iface, mixer/mux, enable*/
+                /*array index, iface, mixer/mux, enable*/
                 sapmConfig = [
                     0,     2,    0,    1,
                     1,     2,    0,    1,
