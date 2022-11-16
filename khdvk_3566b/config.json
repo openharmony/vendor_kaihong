@@ -2,7 +2,7 @@
   "product_name": "khdvk_3566b",
   "device_company": "kaihong",
   "device_build_path": "device/board/kaihong/khdvk_3566b",
-  "target_cpu": "arm64",
+  "target_cpu": "arm",
   "type": "standard",
   "version": "3.0",
   "board": "khdvk_3566b",
@@ -27,6 +27,19 @@
         {
           "component": "netmanager_ext",
           "features": []
+        }
+      ]
+    },
+    {
+      "subsystem": "hdf",
+      "components": [
+        {
+          "component": "drivers_interface_ril",
+          "features": []
+        },
+        {
+          "component": "drivers_peripheral_ril",
+          "features":[]
         }
       ]
     },

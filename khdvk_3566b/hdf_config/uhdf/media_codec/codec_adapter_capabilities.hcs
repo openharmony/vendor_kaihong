@@ -92,7 +92,7 @@ root {
                 minFrameRate = 0;
                 maxFrameRate = 0;
                 inputBufferCount = 4;
-                inputBufferSize = 4096;
+                inputBufferSize = 409600;
                 outputBufferCount = 10;
                 outputBufferSize = 614400;
             }

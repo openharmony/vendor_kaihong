@@ -348,6 +348,30 @@
                 }
             }
         }
+        camera :: host {
+            hostName = "camera_host0";
+            device_camera :: device {
+                camera0 :: deviceNode {
+                    policy = 2;
+                    priority = 100;
+                    preload = 0;
+                    permission = 0664;
+                    moduleName = "HDF_CAMERA";
+                    serviceName = "hdfcamera";
+                    deviceMatchAttr = "hdf_camera_driver";
+                }
+            }
+            camera_adapter :: device {
+                camera0 :: deviceNode {
+                    policy = 2;
+                    priority = 100;
+                    preload = 0;
+                    permission = 0664;
+                    moduleName = "HDF_CAMERA_ADAPTER";
+                    serviceName = "hdfcamera0";
+                }
+            }
+        }
         sensor :: host {
             hostName = "sensor_host";
             device_sensor_manager :: device {

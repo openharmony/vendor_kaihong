@@ -35,10 +35,10 @@
     <cmd id="10006" name="click_normal">
         <Action>
             <duration>250</duration>
-            <lit_cpu_min_freq>1608000</lit_cpu_min_freq>
+            <lit_cpu_min_freq>1992000</lit_cpu_min_freq>
         </Action>
     </cmd>
-    <cmd id="10007" name="push_page">
+    <cmd id="10007" name="push_page_start">
         <Action>
             <duration>300</duration>
             <lit_cpu_min_freq>1608000</lit_cpu_min_freq>
@@ -54,6 +54,31 @@
         <Action>
             <duration>5000</duration>
             <lit_cpu_min_freq>1992000</lit_cpu_min_freq>
+        </Action>
+    </cmd>
+    <cmd id="10010" name="touch_down_up">
+        <Action>
+            <duration>100</duration>
+            <lit_cpu_min_freq>1608000</lit_cpu_min_freq>
+        </Action>
+    </cmd>
+    <cmd id="10011" name="push_page_complete">
+        <Action>
+            <duration>200</duration>
+            <lit_cpu_min_freq>1416000</lit_cpu_min_freq>
+        </Action>
+    </cmd>
+    <cmd id="10012" name="web_gesture">
+        <Action>
+            <duration>800</duration>
+            <lit_cpu_min_freq>1992000</lit_cpu_min_freq>
+            <gpu_min_freq>800000000</gpu_min_freq>
+        </Action>
+    </cmd>
+    <cmd id="10016" name="pop_page">
+        <Action>
+            <duration>400</duration>
+            <lit_cpu_min_freq>1608000</lit_cpu_min_freq>
         </Action>
     </cmd>
 </Configs>

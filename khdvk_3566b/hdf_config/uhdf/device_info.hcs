@@ -41,8 +41,8 @@
                 device0 :: deviceNode {
                     policy = 2;
                     priority = 100;
-                    moduleName = "libbluetooth_hdi_server.z.so";
-                    serviceName = "BtHciService";
+                    moduleName = "libbluetooth_hci_hdi_driver.z.so";
+                    serviceName = "hci_interface_service";
                 }
             }
         }
@@ -62,7 +62,7 @@
         usb :: host {
             hostName = "usb_host";
             priority = 50;
-            caps = ["DAC_OVERRIDE", "DAC_READ_SEARCH"];
+            caps = ["DAC_OVERRIDE"];
             usb_pnp_manager_device :: device {
                 device0 :: deviceNode {
                     policy = 2;
@@ -112,6 +112,7 @@
             priority = 50;
             uid = "power_host";
             gid = ["power_host", "system", "log"];
+            caps = ["BLOCK_SUSPEND"];
             power_device :: device {
                 device0 :: deviceNode {
                     policy = 2;
@@ -146,14 +147,14 @@
                     policy = 2;
                     priority = 100;
                     moduleName = "libwifi_hdi_c_device.z.so";
-                    serviceName = "wlan_hal_service";
+                    serviceName = "wlan_interface_service";
                 }
             }
         }
         audio :: host {
             hostName = "audio_host";
             priority = 50;
-            gid = ["audio_host", "uhdf_driver"];
+            gid = ["audio_host", "uhdf_driver", "root", "audio"];
             audio_device :: device {
                 device0 :: deviceNode {
                     policy = 2;
@@ -191,20 +192,19 @@
                     policy = 2;
                     priority = 100;
                     moduleName = "libaudio_manager_service.z.so";
-                    serviceName = "idl_audio_service";
+                    serviceName = "audio_manager_service";
                 }
             }
         }
         hdi_server :: host {
             hostName = "camera_host";
             priority = 50;
-            caps = ["DAC_OVERRIDE"];
             gid = ["camera_host", "uhdf_driver", "vendor_mpp_driver"];
             camera_device :: device {
                  device0 :: deviceNode {
                      policy = 2;
                      priority = 100;
-                     moduleName = "libcamera_hdi_impl.z.so";
+                     moduleName = "libcamera_host_service_1.0.z.so";
                      serviceName = "camera_service";
                  }
              }
@@ -423,6 +423,22 @@
                     preload = 2;
                     moduleName = "liblocation_geofence_hdi_driver.z.so";
                     serviceName = "geofence_interface_service";
+                }
+            }
+        }
+        partitionslot :: host {
+            hostName = "partitionslot_host";
+            priority = 100;
+            uid = "useriam";
+            gid = ["useriam", "update"];
+            caps = ["DAC_OVERRIDE", "DAC_READ_SEARCH"];
+            partitionslot_device :: device {
+                device0 :: deviceNode {
+                    policy = 2;
+                    priority = 100;
+                    preload = 2;
+                    moduleName = "libpartitionslot_driver.z.so";
+                    serviceName = "partition_slot_service";
                 }
             }
         }
