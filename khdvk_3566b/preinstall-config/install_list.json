@@ -129,16 +129,48 @@
             "removable" : false
         },
         {
-            "app_dir" : "/system/app/com.ohos.screenlock",
-            "removable" : false
-        },
-        {
             "app_dir" : "/system/app/ohos.backgroundtaskmgr.resources",
             "removable" : false
         },
         {
             "app_dir" : "/system/app/ohos.sample.shopping",
             "removable" : false
+        },
+        {
+            "app_dir" : "/system/app/com.ohos.wallpaper",
+            "removable" : true
+        },
+        {
+            "app_dir" : "/system/app/cn.openharmony.inputmethodchoosedialog",
+            "removable" : false
+        },
+        {
+            "app_dir": "/system/app/com.ohos.sharepickerdialog",
+            "removable": false
+        },
+        {
+            "app_dir" : "/system/app/cn.openharmony.pasteboarddialog",
+            "removable" : true
+        },
+        {
+            "app_dir": "/system/app/com.ohos.amsdialog",
+            "removable": false
+        },
+        {
+            "app_dir": "/system/app/com.usb.right",
+            "removable": true
+        },
+        {
+            "app_dir": "/system/app/com.ohos.certificatemanager",
+            "removable": true
+        },
+        {
+            "app_dir": "/system/app/com.ohos.powerdialog",
+            "removable": false
+        },
+        {
+            "app_dir": "/system/app/com.ohos.notificationdialog",
+            "removable": true
         }
     ]
 }

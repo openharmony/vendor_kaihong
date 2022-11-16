@@ -6,7 +6,7 @@
   "scripts": {},
   "dirs": [""],
   "component": {
-    "name": "kaihong_products",
+    "name": "product_khdvk_3566b",
     "subsystem": "kaihong_products",
     "syscap": [],
     "features": [],
@@ -18,7 +18,8 @@
       "sub_component": [
         "//vendor/kaihong/khdvk_3566b/image_conf:custom_image_conf",
         "//vendor/kaihong/khdvk_3566b/preinstall-config:preinstall-config",
-        "//vendor/kaihong/khdvk_3566b/resourceschedule:resourceschedule"
+        "//vendor/kaihong/khdvk_3566b/resourceschedule:resourceschedule",
+        "//vendor/kaihong/khdvk_3566b/etc:product_etc_conf"
       ]
     }
   }
