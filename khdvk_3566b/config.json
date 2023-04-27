@@ -81,6 +81,18 @@
         {
           "component": "drivers_interface_audio",
           "features": []
+        },
+        {
+          "component": "drivers_peripheral_display",
+          "features": [
+            "drivers_peripheral_display_community = true"
+          ]
+        },
+        {
+          "component": "hdf_core",
+          "features": [
+            "hdf_core_platform_test_support = true"
+          ]
         }
       ]
     }
