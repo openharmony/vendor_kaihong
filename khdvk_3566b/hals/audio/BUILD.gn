@@ -22,6 +22,21 @@ ohos_prebuilt_etc("hdf_audio_path_json") {
   part_name = "product_khdvk_3566b"
 }
 
+ohos_prebuilt_etc("audio_policy_config") {
+  if (target_cpu == "arm64") {
+    source = "config/arm64/audio_policy_config.xml"
+  } else {
+    source = "config/arm/audio_policy_config.xml"
+  }
+  subsystem_name = "hdf"
+  relative_install_dir = "audio"
+  install_images = [ chipset_base_dir ]
+  part_name = "product_khdvk_3566b"
+}
+
 group("hdf_audio_config") {
-  deps = [ ":hdf_audio_path_json" ]
+  deps = [
+    ":audio_policy_config",
+    ":hdf_audio_path_json",
+  ]
 }
