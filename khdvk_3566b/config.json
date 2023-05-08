@@ -40,6 +40,13 @@
         {
           "component": "drivers_peripheral_ril",
           "features":[]
+        },
+        {
+          "component": "drivers_peripheral_wlan",
+          "features": [
+            "drivers_peripheral_wlan_feature_enable_HDF_NL80211 = true",
+            "drivers_peripheral_wlan_feature_enable_HDF_UT = false"
+          ]
         }
       ]
     },
