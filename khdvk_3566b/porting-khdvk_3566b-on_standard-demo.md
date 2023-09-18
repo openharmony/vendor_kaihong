@@ -2146,8 +2146,8 @@ vendor/kaihong/khdvk_3566b/hdf_config/uhdf/camera/pipeline_core/config.hcs为pip
             status = "new";
             out_port_0 :: port_spec {
                 name = "out0";
-                peer_port_name = "in0";
-                peer_port_node_name = "sink#0";
+                peerPortName = "in0";
+                peerPortNodeName = "sink#0";
                 direction = 1;
                 width = 0;
                 height = 0;
@@ -2157,11 +2157,11 @@ vendor/kaihong/khdvk_3566b/hdf_config/uhdf/camera/pipeline_core/config.hcs为pip
         sink :: node_spec {
             name = "sink#0";
             status = "new";
-            stream_type = "preview";
+            streamType = "preview";
             in_port_0 :: port_spec {
                 name = "in0";
-                peer_port_name = "out0";
-                peer_port_node_name = "v4l2_source#0";
+                peerPortName = "out0";
+                peerPortNodeName = "v4l2_source#0";
                 direction = 0;
             }
         }
