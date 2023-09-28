@@ -1,0 +1,10 @@
+{
+  "parts": {
+    "product_khdvk_450a_xts": {
+      "module_list": [
+        "//vendor/kaihong/khdvk_450a_xts:khdvk_450a_xts"
+      ]
+    }
+  },
+  "subsystem": "product_khdvk_450a_xts"
+}

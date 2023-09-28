@@ -9,6 +9,7 @@
 ```
 vendor/kaihong
 ├── khdvk_3566b                                # khdvk_3566b开发板
+├── khdvk_450a                                 # khdvk_450a开发板
 └── ...
 ```
 
@@ -132,3 +133,5 @@ out/khdvk_3566b/suites/hats/testcases/
 
 * [device/board/kaihong](https://gitee.com/openharmony-sig/device_board_kaihong)
 * [device/soc/rockchip](https://gitee.com/openharmony-sig/device_soc_rockchip)
+* [device_soc_gigadevice](https://gitee.com/openharmony-sig/device_soc_gigadevice)
+
