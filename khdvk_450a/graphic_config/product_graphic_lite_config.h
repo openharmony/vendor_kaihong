@@ -17,36 +17,36 @@
 #define PRODUCT_GRAPHIC_LITE_CONFIG_H
 
 /**
- * @brief Font shaping, which is disabled by default on Huawei LiteOS.
+ * @brief Font shaping, which is disabled by default on LiteOS.
  *        Cannot take effect without ENABLE_ICU.
  */
 #define ENABLE_SHAPING 0
 /**
- * @brief Advanced algorithm for line breaks, which is disabled by default on Huawei LiteOS.
+ * @brief Advanced algorithm for line breaks, which is disabled by default on LiteOS.
  */
 #define ENABLE_ICU 0
 /**
- * @brief Multi-Font type, which is disabled by default on Huawei LiteOS.
+ * @brief Multi-Font type, which is disabled by default on LiteOS.
  */
 #define ENABLE_MULTI_FONT 0
 /**
- * @brief Multi-window, which does not take effect on Huawei LiteOS.
+ * @brief Multi-window, which does not take effect on LiteOS.
  */
 #define ENABLE_WINDOW 0
 /**
- * @brief Display buffer for rendering data refresh, which is disabled by default on Huawei LiteOS.
+ * @brief Display buffer for rendering data refresh, which is disabled by default on LiteOS.
  */
 #define ENABLE_FRAME_BUFFER 1
 /**
- * @brief Vector type font, which is enabled by default on Huawei LiteOS.
+ * @brief Vector type font, which is enabled by default on LiteOS.
  */
 #define ENABLE_VECTOR_FONT 1
 /**
- * @brief Bitmap type font, which is disabled by default on Huawei LiteOS.
+ * @brief Bitmap type font, which is disabled by default on LiteOS.
  */
 #define ENABLE_BITMAP_FONT 0
 /**
- * @brief Static Bitmap type font, which is disabled by default on Huawei LiteOS.
+ * @brief Static Bitmap type font, which is disabled by default on LiteOS.
  */
 #define ENABLE_STATIC_FONT 0
 
@@ -57,19 +57,19 @@
 #define FULLY_RENDER 1
 
 /**
- * @brief Graphics rendering hardware acceleration, which is enabled by default on Huawei LiteOS.
+ * @brief Graphics rendering hardware acceleration, which is enabled by default on LiteOS.
  */
 #define ENABLE_HARDWARE_ACCELERATION 0
 /**
- * @brief Graphics rendering hardware acceleration for text, which is disabled by default on Huawei LiteOS.
+ * @brief Graphics rendering hardware acceleration for text, which is disabled by default on LiteOS.
  */
 #define ENABLE_HARDWARE_ACCELERATION_FOR_TEXT 0
 /**
- * @brief Graphics rendering accelerated by gfx_engines, which is disabled by default on Huawei LiteOS.
+ * @brief Graphics rendering accelerated by gfx_engines, which is disabled by default on LiteOS.
  */
 #define ENABLE_GFX_ENGINES 0
 /**
- * @brief ARM NEON ability, which is disabled by default on Huawei LiteOS.
+ * @brief ARM NEON ability, which is disabled by default on LiteOS.
  */
 #define ENABLE_ARM_NEON 0
 
