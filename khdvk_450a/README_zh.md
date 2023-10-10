@@ -10,7 +10,7 @@
 sudo apt-get update && sudo apt-get install binutils binutils-dev flex bison build-essential zlib1g-dev gcc-multilib g++-multilib libc6-dev-amd64 lib32ncurses5-dev libx11-dev lib32z1-dev ccache unzip ruby zip make e2fsprogs liblz4-tool perl openssl libssl-dev libelf-dev libdwarf-dev u-boot-tools mtd-utils liblz4-tool gcc g++  libncurses5 apt-utils wget scons tar rsync git-core lib32z-dev quota libtinfo-dev libtinfo5 libncurses5-dev bc default-jdk libssl-dev libtinfo5 genext2fs 
 ```
 
-说明：以上安装命令适用于Ubuntu 20.04，其他版本请根据安装包名称采用对应的安装命令。
+说明：以上安装命令适用于Ubuntu 20.04，其它版本请根据安装包名称采用对应的安装命令。
 
 ### **2、安装交叉编译工具arm-none-eabi-gcc**
 
@@ -37,7 +37,7 @@ tar -jxvf gcc-arm-none-eabi-10.3-2021.10-x86_64-linux.tar.bz2 -C ~/toolchain/
 vim ~/.bashrc
 ```
 
-将以下命令拷贝到.bashrc文件的最后一行，保存并退出。
+将以下命令拷贝到.bashrc文件的末尾一行，保存并退出。
 
 ```
 export PATH=~/toolchain/gcc-arm-none-eabi-10.3-2021.10/bin:$PATH
@@ -68,7 +68,7 @@ git config --global credential.helper store
 4）安装码云repo工具，可以执行如下命令。
 
 ```
-curl -s https://gitee.com/oschina/repo/raw/fork_flow/repo-py3 > /usr/local/bin/repo #如果没有权限，可下载至其他目录，并将其配置到环境变量中
+curl -s https://gitee.com/oschina/repo/raw/fork_flow/repo-py3 > /usr/local/bin/repo #如果没有权限，可下载至其它目录，并将其配置到环境变量中
 chmod a+x /usr/local/bin/repo
 pip3 install -i https://repo.huaweicloud.com/repository/pypi/simple requests
 ```
