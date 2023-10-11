@@ -1,0 +1,123 @@
+{
+  "product_name": "khdvk_450a_xts",
+  "ohos_version": "OpenHarmony 3.1",
+  "type": "mini",
+  "version": "3.0",
+  "device_company": "kaihong",
+  "board": "khdvk_450a",
+  "kernel_type": "liteos_m",
+  "kernel_version": "3.0.0",
+  "param_list": {
+    "force_link_lib_list": [
+      {
+        "enable": "true",
+        "force_link_libs": [
+          "hal_iothardware"
+        ]
+      }
+    ]
+  },
+  "subsystems": [
+    {
+      "subsystem": "kernel",
+      "components": [
+        {
+          "component": "liteos_m",
+          "features": [
+            "ohos_kernel_liteos_m_lwip_path = \"//device/board/kaihong/khdvk_450a/liteos_m/ethernet\""
+          ]
+        }
+      ]
+    },
+    {
+      "subsystem": "hiviewdfx",
+      "components": [
+        {
+          "component": "hilog_lite",
+          "features": []
+        },
+        {
+          "component": "hievent_lite",
+          "features": []
+        }
+      ]
+    },
+		{
+			"subsystem": "security",
+			"components": [
+			  { "component": "huks", "features":
+				[
+				  "huks_use_lite_storage = true",
+				  "huks_config_file = \"hks_config_lite.h\""
+				]
+			  }
+			]
+		},   
+    {
+      "subsystem": "updater",
+      "components": [
+        { "component": "sys_installer_lite", "features":[] }
+      ]
+    },  
+    {
+      "subsystem": "systemabilitymgr",
+      "components": [
+        {
+          "component": "samgr_lite",
+          "features": []
+        }
+      ]
+    },
+    {
+      "subsystem": "commonlibrary",
+      "components": [
+        {
+          "component": "file",
+          "features": []
+        }
+      ]
+    },
+    {
+      "subsystem": "startup",
+      "components": [
+        {
+          "component": "bootstrap_lite",
+          "features": []
+        },
+        {
+          "component": "init_lite",
+          "features": 
+          [
+            "enable_ohos_startup_init_feature_begetctl_liteos=true",
+            "enable_ohos_startup_init_lite_use_thirdparty_mbedtls = false"
+          ]
+        },
+        {
+          "component": "syspara_lite",
+          "features": []
+        }
+      ]
+    },
+    {
+      "subsystem": "iothardware",
+      "components": [
+        { "component": "peripheral", "features":[] }
+      ]
+    },
+    {
+      "subsystem": "xts",
+      "components": [
+        { "component": "xts_acts", "features":
+          [
+            "build_xts=true",
+            "config_ohos_xts_acts_utils_lite_kv_store_data_path = \"/data\""
+          ]
+        },
+        { "component": "xts_tools", "features":[] }
+       ]
+    }
+  ],
+  "vendor_adapter_dir": "//device/soc/gigadevice/gd32f4xx/adapter",
+  "product_adapter_dir": "//vendor/kaihong/khdvk_450a_xts/hals",
+  "third_party_dir": ""
+}
