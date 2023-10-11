@@ -1,0 +1,8 @@
+-
+  fs_dir_name: lfs
+  fs_dirs:
+    -
+      source_dir: ${root_path}/vendor/kaihong/${product_name}/fs/data
+      target_dir: data
+  fs_make_cmd:
+    - ${root_path}/device/board/kaihong/khdvk_450a/pack_tools/mk_lfs.sh ${fs_dir}
